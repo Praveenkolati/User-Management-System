@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ums {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.up a {
+    color: white;
+}
+
+.dropdown>button {
+    background-size: 1355px;
+    position: relative;
+    /* left: 200px; */
+    padding-right: 20px;
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 10px;
+    text-decoration: solid;
+    font-size: large;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-content a:active{
+    color: white;
+}
+.dropdown-content>a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(230, 237, 219);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:black;
+}
+
+
+.pic {
+    width: 400px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.dropbtn {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.images,
+.image,
+.pic,
+p {
+    cursor: pointer;
+}
+.dropdown-content{
+    text-transform: none;
+    overflow: visible;
+}
+.up:hover {
+    background-color: maroon;
+}
+
+.dropdown>div:hover {
+    display: block;
+}
+
+.dropdown {
+    text-align: center;
+    background-color: maroon;
+    height: 57px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.navbar {
+    background-color: maroon;
+    margin-top: -10px;
+}
+
+.logos {
+    width: 1355px;
+    height: 200px;
+}
+
+.logos>#nbkr {
+    position: absolute;
+    /* left: 500px; */
+    border: 2px;
+}
+.logos>#aicte {
+    position: absolute;
+    left: 410px;
+    top: 17px;
+    border: 2px;
+    margin: 20px;
+    height: auto;
+    width: auto;
+}
+
+.logos>#naac {
+    position: absolute;
+    left: 540px;
+    top: 17px;
+    border: 2px;
+    margin: 20px;
+    height: auto;
+    width: auto;
+}
+.logos>#res {
+    position: absolute;
+    right: 460px;
+    margin: 20px;
+    top: 17px;
+    height: auto;
+    width: auto;
+}
+
+.logos>#ugc {
+    position: absolute;
+    left: 800px;
+    top: 5px;
+    border: 2px;
+    margin: 20px;
+    height: auto;
+    width: auto;
+}
+.logos>#nba {
+    position: absolute;
+    right: 190px;
+    margin: 20px;
+    top: 17px;
+    height: auto;
+    width: auto;
+    box-shadow: inset;
+}
+
+.logos>#grade {
+    position: absolute;
+    right: 30px;
+    top: 17px;
+    border: 2px;
+    margin: 20px;
+    height: auto;
+    width: auto;
+}
+.images {
+    width: 550px;
+    margin-top: 10px;
+    height: auto;
+    position: relative;
+}
+
+.image {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 500px;
+    height: 250px;
+}
+

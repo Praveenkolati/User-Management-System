@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi">
+    <title>Setting password</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            font-family: "Alatsi";
+        }
+
+        div {
+            outline: 3px solid black;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>Create Your new password..</h2>
+        <center>
+            <form action="#">
+                <center>
+                    <table>
+                        <tr>
+                            <td><strong>Create New Password:</strong>
+                                <input type="password" name="email" placeholder="password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Confirm New Password:</strong>
+                                <input type="text" name="otp" placeholder="password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center><button onclick="my()">Submit</button></center>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                <br>
+                <script>
+                    function my() {
+                        alert("successfully created");
+                    }
+                </script>
+                <div class="baby">
+                    <strong>NOTE:</strong>
+                    <h3>1.*Your password must be strong</h3>
+                    <h3>2.*Your password must and should contain one upper case as well as one special symbol</h3>
+                    <h3>3.*please do remember your password</h3>
+                </div>
+</body>
+
+</html>

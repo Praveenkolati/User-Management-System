@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi">
+  <title>Forms</title>
+</head>
+
+<body>
+
+  <div class="split left">
+    <div class="centered">
+      <img src="img_avatar.png" alt="Avatar man">
+      <h2>Student Form</h2>
+      <form action="student_reg.php">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+      <img src="img_avatar.png" alt="Avatar man">
+      <h2>Faculty Form</h2>
+      <form action="faculty.php">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

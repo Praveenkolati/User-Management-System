@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 50px;
+            border: 4px solid black;
+        }
+
+        #cl {
+            padding: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px dotted red;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            border-color: #080808;
+            min-height: 50px;
+            border: 1px solid transparent;
+        }
+
+        footer {
+            min-height: 25px;
+            border: 2px solid transparent;
+        }
+
+        /* .q {
+            padding: 8px;
+            border: 3px solid lightgreen;
+            color: orange;
+        } */
+
+        .dc {
+            padding: 5px 12px 5px 2px;
+            width: 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align:center;">Faculty Registration</h1>
+    </header>
+    <div id="cl">
+        <form action="new2.html">
+            <label>Name: </label>
+            <input class="q" id="A" name="name" placeholder="Name"> <br> <br>
+            <label> Father Name : </label>
+            <input class="q" id="B" name="fathername" placeholder="Father Name"> <br> <br>
+            <label>Mother Name : </label>
+            <input clas="q" id="C" name="mothername" placeholder="Mother Name"><br> <br>
+            <label>Address :</label>
+            <input class="q"id="D" name="address" placeholder="address"><br> <br>
+            <label>Gender:</label>
+            <input id="t1" type="radio" name="gender" value="Male"> Male</input>
+            <input id="t2" type="radio" name="gender" value="Female">
+            Female</input>
+            <input id="t3" type="radio" name="gender" value="Other">
+            Other</input><br> <br>
+            <label> Email Address: </label>
+            <input id="em" name="email" type="email"> </input><br> <br>
+            <label> Telephone number: </label><input id="tn" type="tel" placeholder="Telephone no">
+            <br> <br>
+            <label> Nationality: </label> <input type="text" id="nnn" value="Indian">
+            <br> <br>
+            <label>Skills: </label> <input class="q" placeholder="skills" id="E"><br><br>
+            <label>Qualification: </label> <br>
+            <br> <label>SSC: </label> <input placeholder="Enter School Name" name="ssc" type="text" id="ssc" class="q"></input><br>
+            <br><label>Inter:</label> <input class="q" name="inter" placeholder="Enter college Name" type="text" id="inter"></input>
+            <br><br>
+            <label>Btech:</label>
+            <input class="q" name="btech"placeholder="Enter Institute Name" type="text" id="bte"></input>
+            <br><br>
+            <label>Mtech:</label>
+            <input class="q" name="mtech" placeholder="Enter Institite Name" type="text" id="mte"></input>
+            <br>
+            <br>
+            <label>Percentage: </label>
+            <br>
+            <!-- <table id="cl1">
+                <tbody>
+                    <tr>
+                        <th>SSC</th>
+                        <th>College</th>
+                        <th>Btech</th>
+                        <th>Mtech</th>
+                    </tr>
+                    <tr>
+                        <td><input class="dc" id="a1" type="number"></input> </td>
+                        <td><input class="dc" id="a2" type="number"></input></td>
+                        <td><input class="dc" id="a3" type="number"></input></td>
+                        <td><input class="dc" id="a4" type="number"></input></td>
+                    </tr>
+                </tbody>
+            </table> -->
+            <br><br>
+            <label>Account no:</label>
+            <input type="text" id="ac" name="accno" placeholder="Account no">
+            <label>IFSC code:</label>
+            <input type="text" id="ic" name="ifsc" placeholder="IFSC code"><br><br>
+            <label>Languages known: </label>
+            <input id="c1" type="text" name="language" placeholder="Language"><br><br>
+            <label>Hobbies: </label><input type="text" id="c8" placeholder="Hobbies"><br><br>
+            <footer>
+                <br>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="user name" required>
+                <br><br>
+                <label for="pass"> Create Your Password:</label>
+                <input type="password" id="psw" name="password" placeholder="Password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required>
+                <br><br>
+                <center>
+                    <button onclick="my()" class="btn btn-danger">Submit</button>
+                </center>
+            </footer>
+        </form>
+    </div>
+    <script>
+        function my() {
+            var val = document.getElementById("A").value;
+            localStorage.setItem("name", val);
+            var fn = document.getElementById("B").value;
+            localStorage.setItem("fn", fn);
+            var mn = document.getElementById("C").value;
+            localStorage.setItem("mn", mn);
+            var bb = document.getElementById("D").value;
+            localStorage.setItem("ad", bb);
+            var b1 = document.getElementById("t1");
+            var b2 = document.getElementById("t2");
+            var b3 = document.getElementById("t3");
+            var g;
+            if (b1.checked == true) {
+                g = b1.value;
+            }
+            else if (b2.checked == true) {
+
+                g = b2.value;
+            }
+            else {
+                g = b3.value;
+            }
+            localStorage.setItem("g", g);
+            localStorage.setItem("N",
+                document.getElementById("nnn").value);
+
+            localStorage.setItem("m",
+                document.getElementById("em").value);
+            localStorage.setItem("ten", document.getElementById("tn").value);
+            localStorage.setItem("ski", document.getElementById("sk").value);
+            var places = [];
+            localStorage.setItem("q1", document.getElementById("ssc").value);
+            localStorage.setItem("q2", document.getElementById("inter").value);
+            localStorage.setItem("q3", document.getElementById("bte").value);
+            localStorage.setItem("q4", document.getElementById("mte").value);
+            localStorage.setItem("m1", document.getElementById("a1").value);
+            localStorage.setItem("m2", document.getElementById("a2").value);
+            localStorage.setItem("m3", document.getElementById("a3").value);
+            localStorage.setItem("m4", document.getElementById("a4").value);
+            localStorage.setItem("lk", document.getElementById("c1").value);
+            localStorage.setItem("hbb", document.getElementById("c8").value);
+            localStorage.setItem("acc", document.getElementById("ac").value);
+            localStorage.setItem("code", document.getElementById("ic").value);
+
+        }
+
+    </script>
+
+</html>

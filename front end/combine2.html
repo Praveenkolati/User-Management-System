@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 5px dotted black;
+            background-image: url(clg.jpg);
+            background-size: cover;
+            color:white;
+            font-size: larger;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #f44336;
+            border-radius: 50px;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+<center>Bio Data</center>
+<span id="s1"></span><br><br>
+<span id="s2"></span><br><br>
+<span id="s3"></span><br><br>
+<span id="s4"></span><br><br>
+<span id="s5"></span><br><br>
+<span id="s6"></span><br><br>
+<span id="s7"></span><br><br>
+<span id="s8"></span><br><br>
+<span id="s9"></span><br><br>
+<span id="s10"></span><br><br>
+<span id="s11"></span><br><br>
+<span id="s12"></span><br><br>
+<span id="s13"></span><br><br>
+<span id="s14"></span><br><br>
+<span id="s15"></span><br><br>
+<span id="s16"></span><br><br>
+
+<footer>
+    <a href="combine.html">TO change</a>
+    <a href="file.html">Home page </a>
+</footer>
+<script>
+    document.getElementById("s1").innerHTML = "Name : "+localStorage.getItem("name");
+    document.getElementById("s2").innerHTML = "Roll no : "+localStorage.getItem("rn");
+    document.getElementById("s3").innerHTML = "Date Of Birth : "+localStorage.getItem("dob");
+    document.getElementById("s4").innerHTML = "Father Name : "+localStorage.getItem("fn");
+    document.getElementById("s5").innerHTML = "Mother Name : "+localStorage.getItem("mn");
+    document.getElementById("s6").innerHTML = "Gender : "+localStorage.getItem("g")
+    document.getElementById("s7").innerHTML = "Email : "+localStorage.getItem("m")
+    document.getElementById("s8").innerHTML = "Mobile Number : "+localStorage.getItem("ten")
+    document.getElementById("s9").innerHTML = "Address : "+localStorage.getItem("add")
+    document.getElementById("s10").innerHTML = "Language: "+localStorage.getItem("lk")
+    document.getElementById("s11").innerHTML = "Fee: "+localStorage.getItem("f")
+    document.getElementById("s12").innerHTML = "Department: "+localStorage.getItem("dep")
+    document.getElementById("s13").innerHTML = "Year: "+localStorage.getItem("ye")
+    document.getElementById("s14").innerHTML = "Account no: "+localStorage.getItem("acc")
+    document.getElementById("s15").innerHTML = "IFSC code: "+localStorage.getItem("code")
+    document.getElementById("s16").innerHTML = "Transportation: "+localStorage.getItem("t")
+    
+</script>
+</body>
+
+</html>

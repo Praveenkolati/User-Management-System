@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact details</title>
+  <style>
+    h2 {
+      text-align: center;
+    }
+
+    body {
+      margin: 5%;
+      background-color: bisque;
+      color: blueviolet;
+    }
+
+    .scroll-container {
+      border: 3px solid cornflowerblue;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .scroll-text {
+      /* animation properties */
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+
+      -moz-animation: my-animation 15s linear infinite;
+      -webkit-animation: my-animation 15s linear infinite;
+      animation: my-animation 15s linear infinite;
+    }
+
+    @-webkit-keyframes my-animation {
+      from {
+        -webkit-transform: translateX(100%);
+      }
+
+      to {
+        -webkit-transform: translateX(-100%);
+      }
+    }
+
+    @keyframes my-animation {
+      from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+
+      to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="scroll-container">
+    <div class="scroll-text">
+      <h1>If you have any querys regarding this web site please contact the below given mobile numbers/emails
+      </h1>
+    </div>
+  </div>
+  <br>
+  <p>
+  <h2>Mobile Number:9xxxxxxxx5</h2>
+  </p>
+  <p>
+  <h2>Mobile Number:7xxxxxxxx4</h2>
+  </p>
+  <p>
+  <h2>Mobile Number:8xxxxxxxx6</h2>
+  </p>
+  <p>
+  <h2>Email Id:Pxxxxxxxxxx@gmaial.com</h2>
+  </p>
+  <p>
+  <h2>Email Id:Cxxxxxxxxxx@gmaial.com</h2>
+  </p>
+  <p>
+  <h2>Email Id:Hxxxxxxxxxx@gmaial.com</h2>
+  </p>
+</body>
+
+</html>

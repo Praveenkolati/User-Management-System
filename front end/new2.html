@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            border: 2px dashed purple;
+            padding: 14px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid deepskyblue;
+            border-collapse: collapse;
+            width: 80%;
+            padding: 16px;
+            text-align: center;
+        }
+
+        #x {
+            padding: 9px 5px 19px 40px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+        footer {
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h1>Bio Data</h1>
+        <hr>
+    </center>
+    <span id="s1"></span><br><br>
+    <span id="s2"></span><br><br>
+    <span id="s3"></span><br><br>
+    <span id="s4"></span><br><br>
+    <span id="s5"></span><br><br>
+    <span id="s6"></span><br><br>
+    <span id="s7"></span><br><br>
+    <span id="s14"></span><br><br>
+    <span id="s15"></span><br><br>
+    <span id="ss"></span><br><br>
+    <span id="ki"></span><br><br>
+    <span>Educational Qualifications:</span><br><br>
+    <span>
+        <table>
+            <tr>
+                <th>Name of Institute</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td id="sc1"></td>
+                <td id="sc2"></td>
+            </tr>
+            <tr>
+                <td id="sc3"></td>
+                <td id="sc4"></td>
+            </tr>
+            <tr>
+                <td id="sc5"></td>
+                <td id="sc6"></td>
+            </tr>
+            <tr>
+                <td id="sc7"></td>
+                <td id="sc8"></td>
+            </tr>
+        </table>
+    </span>
+    <br><br>
+    <span id="la"></span>
+    <br><br>
+    <span id="hb"></span>
+    <br><br>
+    <footer>
+        <hr>
+        <a href="new.html"> change</a> <a href="file.html">Home page</a>
+    </footer>
+
+
+    <script>
+        document.getElementById("s1").innerHTML = "Name : " + localStorage.getItem("name");
+        document.getElementById("s2").innerHTML = "Father's Name : " + localStorage.getItem("fn");
+        document.getElementById("s3").innerHTML = "Mother's Name : " + localStorage.getItem("mn");
+        document.getElementById("s4").innerHTML = "Address : " + localStorage.getItem("ad");
+        document.getElementById("s5").innerHTML = "Gender: " + localStorage.getItem("g");
+        document.getElementById("s6").innerHTML = "Email: " + localStorage.getItem("m");
+        document.getElementById("s7").innerHTML = "Telephone Number: " + localStorage.getItem("ten");
+        document.getElementById("ss").innerHTML = "Nationality: " + localStorage.getItem("N");
+        document.getElementById("ki").innerHTML = "Skills: " + localStorage.getItem("ski");
+        // var v = localStorage.getItem("l");
+        document.getElementById("sc1").innerHTML = localStorage.getItem("q1");
+        document.getElementById("sc2").innerHTML = localStorage.getItem("m1");
+        document.getElementById("sc3").innerHTML = localStorage.getItem("q2");
+        document.getElementById("sc4").innerHTML = localStorage.getItem("m2");
+        document.getElementById("sc5").innerHTML = localStorage.getItem("q3");
+        document.getElementById("sc6").innerHTML = localStorage.getItem("m3");
+        document.getElementById("sc7").innerHTML = localStorage.getItem("q4");
+        document.getElementById("sc8").innerHTML = localStorage.getItem("m4");
+        document.getElementById("s14").innerHTML = "Account no: " + localStorage.getItem("acc")
+        document.getElementById("s15").innerHTML = "IFSC code: " + localStorage.getItem("code")
+        document.getElementById("la").innerHTML = "Languages know: " + localStorage.getItem("lk");
+        document.getElementById("hb").innerHTML = "Hobbies: " + localStorage.getItem("hbb");
+    </script>
+</body>
+
+</html>
